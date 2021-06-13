@@ -543,6 +543,71 @@ footer .container {
     font-weight: bold;
     text-align: center;
 }
+.servicePage .service-item {
+    margin: 0 15px 60px;
+    padding: 0 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.servicePage .service-item:last-of-type {
+    margin-bottom: 20px;
+}
+.servicePage .service-item span {
+    margin-bottom: 30px;
+    display: block;
+    font-size: 70px;
+    color: #aaa;
+}
+.servicePage .service-item .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.servicePage .service-item h2 {
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+.servicePage .service-item p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+@media (min-width: 769px) {
+    .servicePage .title-bg {
+        margin-bottom: 50px;
+    }
+    .servicePage .title-bg h1 {
+        font-size: 34px;
+    }
+    .servicePage .service-item {
+        flex-direction: row;
+        align-items: stretch;
+    }
+    .servicePage .service-item span {
+        width: 150px;
+        padding-right: 60px;
+        font-size: 90px;
+        text-align: right;
+        line-height: 2em;
+        flex: 0 0 30%;
+    }
+    .servicePage .service-item .text {
+        margin-right: 80px;
+        align-items: start;
+        flex: 1;
+    }
+    .servicePage .service-item h2 {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+    .servicePage .service-item p {
+        font-size: 20px;
+    }
+}
 
 /* 制作サイト紹介ページ */
 .workPage {
