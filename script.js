@@ -29,6 +29,4 @@ document.addEventListener('DOMContentLoaded', function() {
     $topBtn.addEventListener('click', function () {
         timer = setInterval(setTimer, 10);
     });
-    
-
 });
