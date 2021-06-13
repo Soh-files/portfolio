@@ -345,12 +345,18 @@ header .container {
     text-align: center;
     margin-bottom: 20px;
 }
+.contact .text p br {
+    display: none;
+}
 
 @media (min-width: 769px) {
     .contact .text {
         width: 700px;
         margin-left: auto;
         margin-right: auto;
+    }
+    .contact .text p br {
+        display: block;
     }
 }
 
