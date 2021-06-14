@@ -171,22 +171,20 @@ header .container {
     height: 100%;
     position: relative;
 }
-.hero h1 {
+.hero #head-title {
     font-size: 15vw;
     position: absolute;
     top: 30%;
     left: 15%;
     /* opacity: 0;
-    visibility: hidden;
-    transition: 0.5s; */
+    transition: 2s 1s; */
 }
-/* .hero h1.show {
+/* .hero #head-title.show {
     opacity: 1;
-    visibility: visible;
 } */
 
 @media (min-width: 769px) {
-    .hero h1 {
+    .hero #head-title {
         font-size: 100px;
     }
 }
@@ -797,4 +795,42 @@ footer .container {
         font-size: 22px;
         padding: 0 30px;
     }
+}
+
+/* 見出しを1文字ずつアニメーションさせる */
+@keyframes showText {
+    0% {
+        opacity: 0;
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.animationTitle.showAnime span {
+    display: inline-block;
+    animation: showText 0.8s backwards;
+}
+.title-bg-anime {
+    transform: scaleX(0);
+    transition: 0.5s 0.3s;
+}
+.title-bg-anime.showAnime {
+    transform: scaleX(1);
+}
+
+
+/* スクロールしたときにコンテンツを表示 */
+.scrollAnime {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.7s;
+}
+.scrollAnime.showContent {
+    opacity: 1;
+    transform: translateY(0px);
 }
