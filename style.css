@@ -329,13 +329,14 @@ header .container {
 
 /* コンテンツ: プロフィール */
 .about .text {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     padding: 0 20px;
     font-size: 18px;
 }
 .about .text p {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    line-height: 1.5;
 }
 .about .text ul {
     margin-left: 20px;
